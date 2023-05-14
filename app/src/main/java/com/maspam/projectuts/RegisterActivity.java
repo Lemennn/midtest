@@ -40,6 +40,7 @@ public class RegisterActivity extends AppCompatActivity {
                     i.putExtra("email", email);
                     i.putExtra("password", password);
                     startActivity(i);
+                    finish();
                 }
             }
         });

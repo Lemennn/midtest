@@ -25,23 +25,16 @@ public class RegisterSuccessActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                binding.btnRegister.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
+                name = getIntent().getStringExtra("name");
+                email = getIntent().getStringExtra("email");
+                password = getIntent().getStringExtra("password");
 
-                        name = getIntent().getStringExtra("name");
-                        email = getIntent().getStringExtra("email");
-                        password = getIntent().getStringExtra("password");
-
-                        Intent i = new Intent(RegisterSuccessActivity.this, LoginActivity.class);
-
-                        i.putExtra("name", name);
-                        i.putExtra("email", email);
-                        i.putExtra("password", password);
-                        startActivity(i);
-
-                    }
-                });
+                Intent i = new Intent(RegisterSuccessActivity.this, LoginActivity.class);
+                i.putExtra("name", name);
+                i.putExtra("email", email);
+                i.putExtra("password", password);
+                startActivity(i);
+                finish();
 
             }
         });

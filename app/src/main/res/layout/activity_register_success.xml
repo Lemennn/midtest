@@ -26,7 +26,7 @@
         android:id="@+id/btn_Register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register"
+        android:text="Login"
         android:fontFamily="@font/poppins"
         android:textAllCaps="false"
         android:background="@drawable/shape_fea700"
