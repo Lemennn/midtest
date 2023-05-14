@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MenuActivity">
+    
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/img"
+        android:contentDescription="himti_logos"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Pribadi"
+        android:fontFamily="@font/poppins"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="58dp"/>
+
+    <TextView
+        android:id="@+id/et_Nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:fontFamily="@font/poppins"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="46dp"/>
+
+    <TextView
+        android:id="@+id/et_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:fontFamily="@font/poppins"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="46dp"/>
+
+    <TextView
+        android:id="@+id/et_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:fontFamily="@font/poppins"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="46dp"/>
+
+
+    
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/img"
+            android:contentDescription="himti_logos"
+            android:layout_marginTop="40dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selamat Masuk"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:layout_marginTop="58dp"
+        android:layout_below="@+id/item"
+        android:layout_marginHorizontal="39dp"/>
+
+    <EditText
+        android:id="@+id/et_Nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama"
+        android:fontFamily="@font/poppins"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:maxLength="15"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="39dp"
+        android:layout_below="@+id/tv_welcome"/>
+
+
+    <EditText
+        android:id="@+id/et_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:maxLength="15"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="39dp"
+        android:layout_below="@+id/et_Nama"/>
+
+    <TextView
+        android:id="@+id/tv_lupaPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="lupa password ?"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:textAlignment="textEnd"
+        android:layout_marginTop="14dp"
+        android:layout_marginHorizontal="37dp"
+        android:layout_below="@+id/et_Password"/>
+    
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:fontFamily="@font/poppins"
+        android:textAllCaps="false"
+        android:background="@drawable/shape_fea700"
+        android:layout_marginTop="58dp"
+        android:layout_marginHorizontal="39dp"
+        android:layout_below="@id/tv_lupaPassword"/>
+
+    <Button
+        android:id="@+id/btn_Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:fontFamily="@font/poppins"
+        android:textAllCaps="false"
+        android:background="@drawable/shape_fea700"
+        android:layout_marginTop="14dp"
+        android:layout_marginHorizontal="39dp"
+        android:layout_below="@id/btn_login"/>
+
+</RelativeLayout>
